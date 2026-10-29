@@ -1,0 +1,398 @@
+{
+  "created": "2026-10-10T20:15:13.112068+00:00",
+  "source": "mongo",
+  "params": {
+    "n_train": 40,
+    "n_val": 8,
+    "n_test": 8,
+    "seed": 42
+  },
+  "conditions": {
+    "raw_records": 453,
+    "kept_conditions": 384,
+    "excluded": 69,
+    "excluded_reasons": {
+      "not a condition page": 21,
+      "too few symptoms": 48
+    },
+    "phrases_per_condition": {
+      "min": 0,
+      "median": 11,
+      "mean": 12.8,
+      "max": 54
+    },
+    "age_group": {
+      "adult": 49,
+      "any": 315,
+      "child": 20
+    },
+    "gender": {
+      "any": 361,
+      "female": 16,
+      "male": 7
+    },
+    "emergency_conditions": 23,
+    "urgency": {
+      "emergency": 90,
+      "routine": 221,
+      "urgent": 73
+    }
+  },
+  "dataset": {
+    "labels": 384,
+    "samples": {
+      "train": 16066,
+      "val": 3072,
+      "test": 3072
+    },
+    "test_unseen_phrase_share": 0.951,
+    "avg_words_train": 17.3
+  },
+  "excluded": [
+    {
+      "condition": "Ankle avulsion fracture",
+      "url": "https://www.nhsinform.scot/illnesses-and-conditions/muscle-bone-and-joints/leg-and-foot-problems-and-conditions/ankle-avulsion-fracture/",
+      "reason": "too few symptoms"
+    },
+    {
+      "condition": "Aplastic anaemia in children and young people",
+      "url": "https://www.nhsinform.scot/illnesses-and-conditions/blood-and-lymph/aplastic-anaemia/aplastic-anaemia-in-children-and-young-people/",
+      "reason": "too few symptoms"
+    },
+    {
+      "condition": "Autism",
+      "url": "https://www.nhsinform.scot/illnesses-and-conditions/brain-nerves-and-spinal-cord/autism/autism/",
+      "reason": "too few symptoms"
+    },
+    {
+      "condition": "Body changes and cancer",
+      "url": "https://www.nhsinform.scot/illnesses-and-conditions/cancer/practical-issues/body-changes-and-cancer/",
+      "reason": "not a condition page"
+    },
+    {
+      "condition": "Bone cancer",
+      "url": "https://www.nhsinform.scot/illnesses-and-conditions/cancer/cancer-types-in-adults/bone-cancer/",
+      "reason": "too few symptoms"
+    },
+    {
+      "condition": "Bottom shuffling in young children",
+      "url": "https://www.nhsinform.scot/illnesses-and-conditions/muscle-bone-and-joints/children-and-young-peoples-muscle-bone-and-joints/bottom-shuffling-in-young-children/",
+      "reason": "too few symptoms"
+    },
+    {
+      "condition": "Bow legs and knock knees in children and young people",
+      "url": "https://www.nhsinform.scot/illnesses-and-conditions/muscle-bone-and-joints/children-and-young-peoples-muscle-bone-and-joints/bow-legs-and-knock-knees-in-children-and-young-people/",
+      "reason": "too few symptoms"
+    },
+    {
+      "condition": "Brain stem death",
+      "url": "https://www.nhsinform.scot/illnesses-and-conditions/brain-nerves-and-spinal-cord/brain-stem-death/",
+      "reason": "not a condition page"
+    },
+    {
+      "condition": "Breast pain",
+      "url": "https://www.nhsinform.scot/illnesses-and-conditions/breast-symptoms/breast-pain/",
+      "reason": "too few symptoms"
+    },
+    {
+      "condition": "Breast swelling in men",
+      "url": "https://www.nhsinform.scot/illnesses-and-conditions/breast-symptoms/breast-swelling-in-men/",
+      "reason": "too few symptoms"
+    },
+    {
+      "condition": "Breathlessness and cancer",
+      "url": "https://www.nhsinform.scot/illnesses-and-conditions/cancer/side-effects/breathlessness-and-cancer/",
+      "reason": "not a condition page"
+    },
+    {
+      "condition": "Cancer-related fatigue",
+      "url": "https://www.nhsinform.scot/illnesses-and-conditions/cancer/side-effects/cancer-related-fatigue/",
+      "reason": "not a condition page"
+    },
+    {
+      "condition": "Carpal tunnel syndrome",
+      "url": "https://www.nhsinform.scot/illnesses-and-conditions/muscle-bone-and-joints/arm-shoulder-and-hand-problems-and-conditions/carpal-tunnel-syndrome/",
+      "reason": "too few symptoms"
+    },
+    {
+      "condition": "Chronic pain",
+      "url": "https://www.nhsinform.scot/illnesses-and-conditions/brain-nerves-and-spinal-cord/chronic-pain/",
+      "reason": "too few symptoms"
+    },
+    {
+      "condition": "Clavicle (collar bone) fracture",
+      "url": "https://www.nhsinform.scot/illnesses-and-conditions/muscle-bone-and-joints/chest-and-rib-problems-and-conditions/clavicle-collar-bone-fracture/",
+      "reason": "too few symptoms"
+    },
+    {
+      "condition": "Coma",
+      "url": "https://www.nhsinform.scot/illnesses-and-conditions/brain-nerves-and-spinal-cord/coma/",
+      "reason": "too few symptoms"
+    },
+    {
+      "condition": "Complications of type 1 diabetes",
+      "url": "https://www.nhsinform.scot/illnesses-and-conditions/diabetes/complications-of-type-1-diabetes/",
+      "reason": "not a condition page"
+    },
+    {
+      "condition": "Dry mouth",
+      "url": "https://www.nhsinform.scot/illnesses-and-conditions/mouth/dry-mouth/",
+      "reason": "too few symptoms"
+    },
+    {
+      "condition": "Dysphagia (swallowing problems)",
+      "url": "https://www.nhsinform.scot/illnesses-and-conditions/stomach-liver-and-gastrointestinal-tract/dysphagia-swallowing-problems/",
+      "reason": "too few symptoms"
+    },
+    {
+      "condition": "Living with dysfibrinogenemia",
+      "url": "https://www.nhsinform.scot/illnesses-and-conditions/rare-conditions/living-with-dysfibrinogenemia/",
+      "reason": "not a condition page"
+    },
+    {
+      "condition": "Eating and digestion with cancer",
+      "url": "https://www.nhsinform.scot/illnesses-and-conditions/cancer/side-effects/eating-and-digestion-with-cancer/",
+      "reason": "too few symptoms"
+    },
+    {
+      "condition": "Elbow (radial head or neck) fracture",
+      "url": "https://www.nhsinform.scot/illnesses-and-conditions/muscle-bone-and-joints/arm-shoulder-and-hand-problems-and-conditions/elbow-radial-head-or-neck-fracture/",
+      "reason": "too few symptoms"
+    },
+    {
+      "condition": "Edwards' syndrome",
+      "url": "https://www.nhsinform.scot/illnesses-and-conditions/chromosomal-conditions/edwards-syndrome/",
+      "reason": "too few symptoms"
+    },
+    {
+      "condition": "Farting",
+      "url": "https://www.nhsinform.scot/illnesses-and-conditions/stomach-liver-and-gastrointestinal-tract/farting/",
+      "reason": "too few symptoms"
+    },
+    {
+      "condition": "Flat feet in children and young people",
+      "url": "https://www.nhsinform.scot/illnesses-and-conditions/muscle-bone-and-joints/children-and-young-peoples-muscles-bones-and-joints/flat-feet-in-children-and-young-people/",
+      "reason": "too few symptoms"
+    },
+    {
+      "condition": "Fragility fracture of the hip",
+      "url": "https://www.nhsinform.scot/illnesses-and-conditions/muscle-bone-and-joints/leg-and-foot-problems-and-conditions/fragility-fracture-of-the-hip/",
+      "reason": "too few symptoms"
+    },
+    {
+      "condition": "Fungal infections",
+      "url": "https://www.nhsinform.scot/illnesses-and-conditions/infections-and-poisoning/fungal-infections/",
+      "reason": "too few symptoms"
+    },
+    {
+      "condition": "Ganglion cysts in children and young people",
+      "url": "https://www.nhsinform.scot/illnesses-and-conditions/muscle-bone-and-joints/children-and-young-peoples-muscles-bones-and-joints/ganglion-cysts-in-children-and-young-people/",
+      "reason": "too few symptoms"
+    },
+    {
+      "condition": "Hair loss and cancer",
+      "url": "https://www.nhsinform.scot/illnesses-and-conditions/cancer/side-effects/hair-loss-and-cancer/",
+      "reason": "not a condition page"
+    },
+    {
+      "condition": "Heart disease",
+      "url": "https://www.nhsinform.scot/illnesses-and-conditions/cardiovascular-disease/heart-disease/",
+      "reason": "too few symptoms"
+    },
+    {
+      "condition": "Hiatus hernia",
+      "url": "https://www.nhsinform.scot/illnesses-and-conditions/stomach-liver-and-gastrointestinal-tract/hiatus-hernia/",
+      "reason": "too few symptoms"
+    },
+    {
+      "condition": "High cholesterol",
+      "url": "https://www.nhsinform.scot/illnesses-and-conditions/cardiovascular-disease/risk-factors-for-cardiovascular-disease/high-cholesterol/",
+      "reason": "too few symptoms"
+    },
+    {
+      "condition": "How to prevent allergy symptoms",
+      "url": "https://www.nhsinform.scot/illnesses-and-conditions/immune-system/how-to-prevent-allergy-symptoms/",
+      "reason": "not a condition page"
+    },
+    {
+      "condition": "Huntington's disease",
+      "url": "https://www.nhsinform.scot/illnesses-and-conditions/brain-nerves-and-spinal-cord/huntingtons-disease/",
+      "reason": "too few symptoms"
+    },
+    {
+      "condition": "Infertility",
+      "url": "https://www.nhsinform.scot/illnesses-and-conditions/sexual-and-reproductive/infertility/",
+      "reason": "too few symptoms"
+    },
+    {
+      "condition": "Inflammatory bowel disease (IBD)",
+      "url": "https://www.nhsinform.scot/illnesses-and-conditions/stomach-liver-and-gastrointestinal-tract/inflammatory-bowel-disease-ibd/",
+      "reason": "too few symptoms"
+    },
+    {
+      "condition": "Intoeing (pigeon toe) in children and young people",
+      "url": "https://www.nhsinform.scot/illnesses-and-conditions/muscle-bone-and-joints/children-and-young-peoples-muscles-bones-and-joints/intoeing-pigeon-toe-in-children-and-young-people/",
+      "reason": "too few symptoms"
+    },
+    {
+      "condition": "Laryngeal (larynx) cancer",
+      "url": "https://www.nhsinform.scot/illnesses-and-conditions/cancer/cancer-types-in-adults/laryngeal-larynx-cancer/",
+      "reason": "too few symptoms"
+    },
+    {
+      "condition": "Liver disease",
+      "url": "https://www.nhsinform.scot/illnesses-and-conditions/stomach-liver-and-gastrointestinal-tract/liver-disease/",
+      "reason": "too few symptoms"
+    },
+    {
+      "condition": "Living with chronic pain",
+      "url": "https://www.nhsinform.scot/illnesses-and-conditions/brain-nerves-and-spinal-cord/chronic-pain/living-with-chronic-pain/",
+      "reason": "not a condition page"
+    },
+    {
+      "condition": "Managing genital symptoms",
+      "url": "https://www.nhsinform.scot/illnesses-and-conditions/sexual-and-reproductive/managing-genital-symptoms/",
+      "reason": "not a condition page"
+    },
+    {
+      "condition": "Metacarpal fracture of the hand",
+      "url": "https://www.nhsinform.scot/illnesses-and-conditions/muscle-bone-and-joints/arm-shoulder-and-hand-problems-and-conditions/metacarpal-fracture-of-the-hand/",
+      "reason": "too few symptoms"
+    },
+    {
+      "condition": "Nipple inversion (inside out nipple)",
+      "url": "https://www.nhsinform.scot/illnesses-and-conditions/breast-symptoms/nipple-inversion-inside-out-nipple/",
+      "reason": "too few symptoms"
+    },
+    {
+      "condition": "Obesity",
+      "url": "https://www.nhsinform.scot/illnesses-and-conditions/nutritional/obesity/",
+      "reason": "too few symptoms"
+    },
+    {
+      "condition": "Osteoporosis",
+      "url": "https://www.nhsinform.scot/illnesses-and-conditions/muscle-bone-and-joints/conditions-that-can-affect-multiple-parts-of-the-body/osteoporosis/",
+      "reason": "too few symptoms"
+    },
+    {
+      "condition": "Pain and cancer",
+      "url": "https://www.nhsinform.scot/illnesses-and-conditions/cancer/side-effects/pain-and-cancer/",
+      "reason": "not a condition page"
+    },
+    {
+      "condition": "Patau's syndrome",
+      "url": "https://www.nhsinform.scot/illnesses-and-conditions/chromosomal-conditions/pataus-syndrome/",
+      "reason": "too few symptoms"
+    },
+    {
+      "condition": "Plantar heel pain",
+      "url": "https://www.nhsinform.scot/illnesses-and-conditions/muscle-bone-and-joints/leg-and-foot-problems-and-conditions/plantar-heel-pain/",
+      "reason": "too few symptoms"
+    },
+    {
+      "condition": "Popliteal cysts in children and young people",
+      "url": "https://www.nhsinform.scot/illnesses-and-conditions/muscle-bone-and-joints/children-and-young-peoples-muscles-bones-and-joints/popliteal-cysts-in-children-and-young-people/",
+      "reason": "too few symptoms"
+    },
+    {
+      "condition": "Positional talipes in children and young people",
+      "url": "https://www.nhsinform.scot/illnesses-and-conditions/muscle-bone-and-joints/children-and-young-peoples-muscles-bones-and-joints/positional-talipes-in-children-and-young-people/",
+      "reason": "too few symptoms"
+    },
+    {
+      "condition": "Rare cancers",
+      "url": "https://www.nhsinform.scot/illnesses-and-conditions/cancer/rare-cancers/",
+      "reason": "too few symptoms"
+    },
+    {
+      "condition": "Rare conditions",
+      "url": "https://www.nhsinform.scot/illnesses-and-conditions/rare-conditions/rare-conditions/",
+      "reason": "not a condition page"
+    },
+    {
+      "condition": "Recovering from a cardiac arrest",
+      "url": "https://www.nhsinform.scot/illnesses-and-conditions/cardiovascular-disease/recovering-from-a-cardiac-arrest/",
+      "reason": "not a condition page"
+    },
+    {
+      "condition": "Living with sickle cell anaemia",
+      "url": "https://www.nhsinform.scot/illnesses-and-conditions/rare-conditions/living-with-sickle-cell-anaemia/",
+      "reason": "not a condition page"
+    },
+    {
+      "condition": "Soft tissue injury advice",
+      "url": "https://www.nhsinform.scot/illnesses-and-conditions/muscle-bone-and-joints/soft-tissue-injury-advice/",
+      "reason": "not a condition page"
+    },
+    {
+      "condition": "Spleen problems and spleen removal",
+      "url": "https://www.nhsinform.scot/illnesses-and-conditions/stomach-liver-and-gastrointestinal-tract/spleen-problems-and-spleen-removal/",
+      "reason": "too few symptoms"
+    },
+    {
+      "condition": "Stillbirth",
+      "url": "https://www.nhsinform.scot/illnesses-and-conditions/pregnancy-and-childbirth/during-a-pregnancy/stillbirth/",
+      "reason": "too few symptoms"
+    },
+    {
+      "condition": "Sudden arrhythmic death syndrome (SADS)",
+      "url": "https://www.nhsinform.scot/illnesses-and-conditions/cardiovascular-disease/sudden-arrhythmic-death-syndrome/",
+      "reason": "too few symptoms"
+    },
+    {
+      "condition": "Sunbed and tanning safety",
+      "url": "https://www.nhsinform.scot/illnesses-and-conditions/skin/sun-safety-and-cancer/sunbed-and-tanning-safety/",
+      "reason": "not a condition page"
+    },
+    {
+      "condition": "Talking to children and teenagers about cancer",
+      "url": "https://www.nhsinform.scot/illnesses-and-conditions/cancer/emotional-issues/talking-to-children-and-teenagers-about-cancer/",
+      "reason": "not a condition page"
+    },
+    {
+      "condition": "Thirst",
+      "url": "https://www.nhsinform.scot/illnesses-and-conditions/nutritional/thirst/",
+      "reason": "too few symptoms"
+    },
+    {
+      "condition": "Thumb fracture",
+      "url": "https://www.nhsinform.scot/illnesses-and-conditions/muscle-bone-and-joints/arm-shoulder-and-hand-problems-and-conditions/thumb-fracture/",
+      "reason": "too few symptoms"
+    },
+    {
+      "condition": "Toe problems in children and young people",
+      "url": "https://www.nhsinform.scot/illnesses-and-conditions/muscle-bone-and-joints/children-and-young-peoples-muscles-bones-and-joints/toe-problems-in-children-and-young-people/",
+      "reason": "too few symptoms"
+    },
+    {
+      "condition": "Toothache",
+      "url": "https://www.nhsinform.scot/illnesses-and-conditions/mouth/toothache/",
+      "reason": "too few symptoms"
+    },
+    {
+      "condition": "Treatment for bites and stings",
+      "url": "https://www.nhsinform.scot/illnesses-and-conditions/injuries/skin-injuries/treatment-for-bites-and-stings/",
+      "reason": "not a condition page"
+    },
+    {
+      "condition": "Trips and falls in young children",
+      "url": "https://www.nhsinform.scot/illnesses-and-conditions/muscle-bone-and-joints/children-and-young-peoples-muscles-bones-and-joints/trips-and-falls-in-young-children/",
+      "reason": "not a condition page"
+    },
+    {
+      "condition": "Types of bites and stings",
+      "url": "https://www.nhsinform.scot/illnesses-and-conditions/injuries/skin-injuries/types-of-bites-and-stings/",
+      "reason": "not a condition page"
+    },
+    {
+      "condition": "Living with vasculitis",
+      "url": "https://www.nhsinform.scot/illnesses-and-conditions/rare-conditions/living-with-vasculitis/",
+      "reason": "not a condition page"
+    },
+    {
+      "condition": "Wrist fracture",
+      "url": "https://www.nhsinform.scot/illnesses-and-conditions/muscle-bone-and-joints/arm-shoulder-and-hand-problems-and-conditions/wrist-fracture/",
+      "reason": "too few symptoms"
+    }
+  ]
+}

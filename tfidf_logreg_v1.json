@@ -1,0 +1,76 @@
+{
+  "name": "tfidf_logreg_v1",
+  "type": "TF-IDF + LogisticRegression",
+  "params": {
+    "solver": "sgd",
+    "alpha": 3e-05,
+    "C": 5.0,
+    "temperature": 0.7065890797591431,
+    "meta_weight": 1.0,
+    "word_features": 20000,
+    "char_features": 18400
+  },
+  "experiments": [
+    {
+      "alpha": 3e-05,
+      "val": {
+        "top1": 0.5374,
+        "top3": 0.6449,
+        "top5": 0.6836,
+        "macro_f1": 0.5418,
+        "mrr": 0.6065,
+        "nll": 2.9889,
+        "mean_top1_prob": 0.2795,
+        "n": 3072,
+        "emergency_recall@1": 0.5109,
+        "emergency_recall@3": 0.6033,
+        "emergency_recall@5": 0.6848,
+        "n_emergency": 184,
+        "unseen_top1": 0.5134,
+        "unseen_top3": 0.6264,
+        "unseen_top5": 0.6671,
+        "n_unseen": 2920
+      },
+      "seconds": 51
+    }
+  ],
+  "selected_alpha": 3e-05,
+  "metrics": {
+    "val": {
+      "top1": 0.5374,
+      "top3": 0.6449,
+      "top5": 0.6836,
+      "macro_f1": 0.5418,
+      "mrr": 0.6065,
+      "nll": 2.9889,
+      "mean_top1_prob": 0.2795,
+      "n": 3072,
+      "emergency_recall@1": 0.5109,
+      "emergency_recall@3": 0.6033,
+      "emergency_recall@5": 0.6848,
+      "n_emergency": 184,
+      "unseen_top1": 0.5134,
+      "unseen_top3": 0.6264,
+      "unseen_top5": 0.6671,
+      "n_unseen": 2920
+    },
+    "test": {
+      "top1": 0.5524,
+      "top3": 0.6504,
+      "top5": 0.6872,
+      "macro_f1": 0.5564,
+      "mrr": 0.6156,
+      "nll": 2.7293,
+      "mean_top1_prob": 0.5387,
+      "n": 3072,
+      "emergency_recall@1": 0.462,
+      "emergency_recall@3": 0.5924,
+      "emergency_recall@5": 0.6413,
+      "n_emergency": 184,
+      "unseen_top1": 0.5295,
+      "unseen_top3": 0.6322,
+      "unseen_top5": 0.6709,
+      "n_unseen": 2920
+    }
+  }
+}
